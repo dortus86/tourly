@@ -1,0 +1,128 @@
+.pesquisa-bg {
+    background-color: var(--cor-p1);
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.pesquisa-form-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1200px;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.pesquisa-form-container button {
+    padding: 16px 76px;
+    font-weight: 600;
+}
+.pesquisa-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.pesquisa-form input {
+    max-width: 200px;
+    height: 56px;
+    border-radius: 100px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    padding-left: 12px;
+}
+
+.pesquisa-form input::placeholder {
+    color: var(--cor-2);
+    padding-left: 8px;
+    padding-bottom: 16px;
+}
+
+.pesquisa-form input[type="date"] {
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.pesquisa-form input[type="number"] {
+    margin-right: 20px;
+}
+
+.pesquisa-form label {
+    margin-left: 20px;
+}
+
+@media (max-width: 1200px) {
+    .pesquisa-form-container {
+        max-width: 1000px;
+    }
+
+    .pesquisa-form input::placeholder {
+        padding-bottom: 40px;
+    }
+
+    .pesquisa-form-container button {
+        padding: 16px 36px;
+        font-size: 1rem;
+    }
+    .pesquisa-form input {
+        max-width: 180px;
+        height: 46px;
+        font-size: 0.8rem;
+    }
+
+
+    .pesquisa-form label {
+        font-size: 0.8rem;
+    }
+
+    .pesquisa-form-container > .botao_branco {
+        height: 46px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .pesquisa {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pesquisa-form-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 50px;
+        min-width: 770px;
+    }
+    .pesquisa-form-container input {
+        max-width: 100%;
+    }
+
+    .pesquisa-form input[type="number"] {
+        margin-right: 0px;
+    }
+    .pesquisa-form-container > .botao_branco {
+        grid-column: 1/-1;
+    }
+}
+
+@media (max-width: 770px) {
+    .pesquisa-form-container {
+        min-width: 580px;
+    }
+}
+
+@media (max-width: 580px) {
+    .pesquisa {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .pesquisa-form-container {
+        min-width: 100vw;
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}

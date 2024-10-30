@@ -1,0 +1,265 @@
+.header-bg {
+    max-width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.header-bg::before {
+    content: "";
+    background: url(../img/hero-banner.jpg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 0% 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    z-index: -1;
+}
+
+.menu-superior {
+    padding: 20px 80px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-superior-contato {
+    max-width: 230px;
+}
+
+.menu-superior-contato .icone {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-superior-contato .icone p {
+    max-width: 150px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+.menu-superior-contato .icone .icone-bg {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--cor-p1);
+}
+
+.menu-superior-contato .icone .icone-bg img {
+    width: 18px;
+}
+
+.menu-superior-logo {
+    max-width: 200px;
+}
+
+.menu-superior-busca {
+    max-width: 30px;
+    justify-self: end;
+}
+
+.menu-inferior {
+    padding: 20px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+.menu-redes {
+    display: flex;
+    gap: 8px;
+}
+
+.menu-redes .icone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+
+.menu-redes .icone:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-redes .icone img {
+    width: 20px;
+}
+
+.menu-inferior-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.menu-inferior-nav ul li a {
+    color: var(--cor-0);
+    transition: 0.3s;
+}
+
+.menu-inferior-nav ul li a:hover {
+    color: var(--cor-p1);
+}
+
+.menu-inferior .botao {
+    background-color: var(--cor-p1);
+    color: var(--cor-0);
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.menu-inferior .botao:hover {
+    background-color: var(--cor-p2);
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.explore h1 {
+    max-width: 1000px;
+    text-transform: uppercase;
+    font-size: 4.5vw;
+    font-weight: 800;
+}
+
+.explore p {
+    max-width: 1100px;
+}
+
+.explore-botoes {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 1300px) {
+    .menu-inferior-nav ul {
+        font-size: 1rem;
+    }
+
+    .explore h1 {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .explore {
+        max-width: 800px;
+    }
+
+    .menu-inferior {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .menu-inferior-nav {
+        display: none;
+    }
+
+    .menu-inferior > a {
+        padding: 12px 16px;
+        font-size: 0.8rem;
+    }
+
+    .explore h1 {
+        padding-top: 200px;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-bg {
+        height: 950px;
+    }
+    .explore p {
+        max-width: 500px;
+    }
+    .icone p {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    .header-bg {
+        height: 850px
+    }
+    .explore h1 {
+        font-size: 7vw;
+        max-width: 500px;
+    }
+    .explore h1 {
+        padding-top: 100px;
+    }
+    .menu-superior-logo a{
+        padding: 0;
+        width: 100px;
+    }
+    .menu-superior-contato .icone .icone-bg {
+        width: 30px;
+        height: 30px;
+    }
+    .menu-superior-contato .icone .icone-bg img {
+        width: 10px;
+    }
+    .menu-superior-busca {
+        width: 20px;
+    }
+    .menu-superior-logo a{
+        padding: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .header-bg {
+        height: 650px
+    }
+    .explore p {
+        font-size: 0.8rem;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .explore-botoes > a {
+        font-size: 0.8rem;
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu-inferior {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu-superior {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

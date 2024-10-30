@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto de estudo desenvolvido pelo Codewithsadee e recriado por mim apenas como objeto de estudo.">
+    <title>Tourly</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    
+    <header class="header-bg">
+        <div class="menu-superior container">
+            <div class="menu-superior-contato">
+                <div class="icone">
+                    <div class="icone-bg">
+                        <img src="./img/phone.svg" alt="">
+                    </div>
+                    <p class="cor-0">Para mais Informações:
+                    +55 (81) 9 9999 9999 </p>
+                </div>
+            </div>
+            <div class="menu-superior-logo">
+                <a href="#"><img src="./img/logo.svg" alt=""></a>
+            </div>
+            <div class="menu-superior-busca">
+                <img src="./img/lupa.svg" alt="">
+            </div>
+        </div>
+        <div class="menu-inferior container">
+            <div class="menu-redes">
+                <a href="#" class="icone">
+                    <img src="./img/facebook.svg" alt="facebook">
+                </a>
+                <a href="#" class="icone">
+                    <img src="./img/x.svg" alt="rede social x">
+                </a>
+                <a href="#" class="icone">
+                    <img src="./img/youtube.svg" alt="youtube">
+                </a>
+            </div>
+            <nav class="menu-inferior-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SOBRE NÓS</a></li>
+                    <li><a href="#">DESTINOS</a></li>
+                    <li><a href="#">PACOTES</a></li>
+                    <li><a href="#">GALERIA</a></li>
+                    <li><a href="#">CONTATE-NOS</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="botao_azul">RESERVE AGORA</a>
+        </div>
+        <section class="explore container" aria-label="explore">
+            <h1 class="font-m cor-0">Jornada para explorar o mundo</h1>
+            <p class="t16 cor-0">Desperte seu espírito aventureiro e embarque na jornada dos seus sonhos! Explore o mundo, descubra culturas fascinantes e viva experiências inesquecíveis. O destino da sua próxima aventura está a um passo de você!</p>
+            <div class="explore-botoes">   
+                <a class="botao_azul" href="#">saiba mais</a>
+                <a class="botao_branco" href="#">saiba mais</a>
+            </div> 
+        </section>
+    </header>
+
+    <section class="pesquisa-bg">
+        <div class="pesquisa container">
+            <form class="pesquisa-form-container" action="./">
+                <div class="pesquisa-form">
+                    <label class="cor-0 t18" for="destino">Procurar Destino*</label>
+                    <input class="t18 cor-2" type="text" id="destino"  name="destino" placeholder="Insira o Destino">
+                </div>
+                <div class="pesquisa-form">
+                    <label class="cor-0 t18" for="passageiros">Nº Passageiros</label>
+                    <input class="t18 cor-2" type="number" id="passageiros" name="passageiros" placeholder="Nº de Pessoas">
+                </div>
+                <div class="pesquisa-form">
+                    <label class="cor-0 t18" for="checkin">Check-in</label>
+                    <input class="t18 cor-2" type="date" id="checkin" name="checkin">
+                </div>
+                <div class="pesquisa-form">
+                    <label class="cor-0 t18" for="checkout">Check-out</label>
+                    <input class="t18 cor-2" type="date" id="checkout" name="checkout">
+                </div>
+                <button class="botao_branco botao_pesquisa">localize</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="destinos">
+        <div class="destinos-container container">
+            <div class="destinos-titulo">
+                <h3 class="t18 cor-p1 font-m">descubra lugares</h3>
+                <h2 class="font-m cor-3">destinos populares</h2>
+                <p class="t18 cor-4">Desbrave os destinos mais populares e mergulhe em aventuras inesquecíveis. Descubra os lugares que encantam viajantes do mundo todo</p>
+            </div>
+            <div class="destinos-cards">
+                <div class="card local1">
+                    <div class="card-interno">
+                        <h3 class="cor-p1 font-m t16">itália</h3>
+                        <h2 class="cor-3 font-m t36">san miguel</h2>
+                        <p class="cor-4">Paisagens deslumbrantes e cultura vibrante!</p>
+                    </div>
+                </div>
+                <div class="card local2">
+                    <div class="card-interno">
+                        <h3 class="cor-p1 font-m t16">dubai</h3>
+                        <h2 class="cor-3 font-m t36">burj khalifa</h2>
+                        <p class="cor-4">O ícone mais alto e deslumbrante de Dubai!</p>
+                    </div>
+                </div>
+                <div class="card local3">
+                    <div class="card-interno">
+                        <h3 class="cor-p1 font-m t16">japão</h3>
+                        <h2 class="cor-3 font-m t36">kyoto temple</h2>
+                        <p class="cor-4">Tradição e serenidade no coração do Japão!</p>
+                    </div>
+                </div>
+            </div>
+            <a class="botao_azul" href="#">mais destinos</a>
+        </div>
+    </section>
+
+    <section class="pacotes">
+        <div class="pacotes-container container">
+            <div class="pacotes-titulo">
+                <h3 class="t18 cor-p1 font-m">pacotes populares</h3>
+                <h2 class="font-m cor-3">confira nossos pacotes</h2>
+                <p class="t18 cor-4">Explore nossos pacotes exclusivos e encontre a viagem perfeita para você! Destinos incríveis e experiências únicas aguardam por aqui.</p>
+            </div>
+            <div class="pacotes-cards">
+                <div class="pacote-interno">
+                    <div class="pacote-imagem">
+                        <img src="./img/card1.jpg" alt="Férias na praia">
+                    </div>
+                    <div class="pacote-informacoes">
+                        <h3 class="cor-3 font-m t36">experimente ótimas férias na praia</h3>
+                        <p class="cor-5 t18">Aproveite cada instante à beira-mar! Relaxe, sinta a brisa e viva o feriado dos seus sonhos em praias paradisíacas.</p>
+                        <div class="informacoes-interno-container">
+                            <div class="informacoes-interno">
+                                <img src="./img/time.svg" alt="">
+                                <p class="cor-4">7D/6N</p>
+                            </div>
+                            <div class="informacoes-interno">
+                                <img src="./img/people.svg" alt="">
+                                <p class="cor-4">pax:10</p>
+                            </div>
+                            <div class="informacoes-interno">
+                                <img src="./img/geo.svg" alt="">
+                                <p class="cor-4">Malásia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pacotes-preco cor-0">
+                        <div class="pacotes-preco-conteudo">
+                            <div>
+                                <p>(25 comentários)</p>
+                                <div>
+                                    <img src="./img/stars2.svg" alt="estrelas">
+                                </div>
+                            </div>
+                            <h2 class="font-m t72">R$ 4.875</h2>
+                            <span>/ pessoa</span>
+                            <a class="botao_branco" href="#">reserve agora</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="pacote-interno">
+                    <div class="pacote-imagem">
+                        <img src="./img/card3.jpg" alt="mulher remando em um barco">
+                    </div>
+                    <div class="pacote-informacoes">
+                        <h3 class="cor-3 font-m t36">férias de verão no rio oxolotan</h3>
+                        <p class="cor-5 t18">Descubra a beleza do verão no Rio Oxolotan! Aventuras, paisagens deslumbrantes e momentos inesquecíveis esperam por você.</p>
+                        <div class="informacoes-interno-container">
+                            <div class="informacoes-interno">
+                                <img src="./img/time.svg" alt="">
+                                <p class="cor-4">7D/6N</p>
+                            </div>
+                            <div class="informacoes-interno">
+                                <img src="./img/people.svg" alt="">
+                                <p class="cor-4">pax:10</p>
+                            </div>
+                            <div class="informacoes-interno">
+                                <img src="./img/geo.svg" alt="">
+                                <p class="cor-4">México</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pacotes-preco cor-0">
+                        <div class="pacotes-preco-conteudo">
+                            <div>
+                                <p>(20 comentários)</p>
+                                <div>
+                                    <img src="./img/stars2.svg" alt="estrelas">
+                                </div>
+                            </div>
+                            <h2 class="font-m t72">R$ 3.380</h2>
+                            <span>/ pessoa</span>
+                            <a class="botao_branco" href="#">reserve agora</a>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="pacote-interno">
+                    <div class="pacote-imagem">
+                        <img src="./img/card2.jpg" alt="imagem da ilha de santorini">
+                    </div>
+                    <div class="pacote-informacoes">
+                        <h3 class="cor-3 font-m t36">final de semana na ilha de santorini</h3>
+                        <p class="cor-5 t18">Descubra o paraíso em um fim de semana em Santorini! Encante-se com o pôr do sol e as águas cristalinas.</p>
+                        <div class="informacoes-interno-container">
+                            <div class="informacoes-interno">
+                                <img src="./img/time.svg" alt="">
+                                <p class="cor-4">7D/6N</p>
+                            </div>
+                            <div class="informacoes-interno">
+                                <img src="./img/people.svg" alt="">
+                                <p class="cor-4">pax:10</p>
+                            </div>
+                            <div class="informacoes-interno">
+                                <img src="./img/geo.svg" alt="">
+                                <p class="cor-4">Grécia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pacotes-preco cor-0">
+                        <div class="pacotes-preco-conteudo">
+                            <div>
+                                <p>(25 comentários)</p>
+                                <div>
+                                    <img src="./img/stars2.svg" alt="estrelas">
+                                </div>
+                            </div>
+                            <h2 class="font-m t72">R$ 3.630</h2>
+                            <span>/ pessoa</span>
+                            <a class="botao_branco" href="#">reserve agora</a>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+    </section>
+
+</body>
+</html>

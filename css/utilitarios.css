@@ -1,0 +1,31 @@
+.botao_azul {
+    display: inline-block;
+    background-color: var(--cor-p1);
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: var(--cor-0);
+    font-size: 1rem;
+    padding: 16px 40px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.botao_azul:hover {
+    background-color: var(--cor-p2);
+}
+
+.botao_branco {
+    display: inline-block;
+    border: 2px solid var(--cor-0);
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: var(--cor-0);
+    font-size: 1rem;
+    padding: 16px 40px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.botao_branco:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
