@@ -193,6 +193,7 @@
 @media (max-width: 800px) {
     .pacote-interno {
         grid-template-columns: 1fr;
+        margin-bottom: 40px;
     }
 
     .pacote-imagem img {
@@ -263,8 +264,8 @@
         max-width: 600px;
         margin: 0 auto;
         padding-bottom: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .pacotes-titulo h3 {
@@ -280,7 +281,9 @@
     }
 
     .pacotes-cards {
-        padding-bottom: 0px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
 }
