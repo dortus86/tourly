@@ -82,3 +82,25 @@
         padding: 8px 16px;
     }
 }
+
+@media (max-width: 400px) {
+    .contato {
+        padding: 0 20px;
+    }
+
+    .contato-conteudo h3 {
+        font-size: 0.875rem;
+    }
+
+    .contato-conteudo h2 {
+        font-size: 1rem;
+    }
+
+    .contato-conteudo p {
+        font-size: 0.725rem;
+    }
+
+    .contato-botao a {
+        font-size: 0.725rem;
+    }
+}
