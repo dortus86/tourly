@@ -34,6 +34,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .pacote-interno {
@@ -133,6 +134,12 @@
 }
 
 .pacotes-preco-conteudo a {
+    justify-self: center;
+}
+
+.pacotes-cards > a {
+    margin-top: 40px;
+    align-self: center;
     justify-self: center;
 }
 
@@ -270,6 +277,10 @@
 
     .pacotes-titulo p {
         font-size: 0.875rem;
+    }
+
+    .pacotes-cards {
+        padding-bottom: 0px;
     }
 
 }
