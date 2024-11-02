@@ -39,6 +39,10 @@
     padding-right: 40px;
 }
 
+.galeria-imagens-lista li {
+    height: 100%;
+}
+
 .galeria-imagens-lista li img {
     border-radius: 20px;
     width: 100%;
