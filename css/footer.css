@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 4fr repeat(2, 3fr);
     gap: 40px;
-    border: 2px solid red;
+    padding: 0 40px;
 }
 
 .conteudo-superior1-img {
@@ -16,7 +16,7 @@
 }
 
 .conteudo-superior1 p {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .conteudo-superior2 h3 {
@@ -33,4 +33,150 @@
     height: 3px;
     bottom: -12px;
     position: absolute;
+}
+
+.conteudo-superior2 p {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.conteudo-superior2 ul li {
+    margin-bottom: 8px;
+    padding-left: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.conteudo-superior2 ul li:first-child::before {
+    content: url(../img/phone2.svg);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+}
+
+.conteudo-superior2 ul li:nth-child(2)::before {
+    content: url(../img/mail.svg);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+
+.conteudo-superior2 ul li:nth-child(3)::before {
+    content: url(../img/geo2.svg);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+.conteudo-superior3 p{
+    margin-bottom: 16px;
+}
+
+.footer-form input {
+    height: 40px;
+    width: 80%;
+    border-radius: 100px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.botao_form-footer {
+    font-size: 0.75rem;
+    width: 80%;
+    height: 40px;
+    padding: 0;
+}
+
+@media (max-width: 1000px) {
+    .conteudo-superior {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 80px;
+    }
+    .conteudo-superior3 {
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        width: 100%;
+        justify-self: flex-start;
+    }
+
+    .form-conteudo-superior-c p {
+        font-size: 0.875rem;
+    }
+
+    .footer-form {
+        display: flex;
+        gap: 16px;
+    }
+
+    .botao_form-footer {
+        max-width: 120px;
+    }
+
+    .footer-form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    .conteudo-superior1 p {
+        font-size: 0.875rem;
+    }
+
+    .conteudo-superior2 h3,
+    .conteudo-superior2 ul li{
+        font-size: 0.875rem;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-form input {
+        height: 56px;
+        margin: 0;
+    }
+
+    .botao_form-footer {
+        height: 56px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .conteudo-superior {
+        row-gap: 80px;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .conteudo-superior {
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .conteudo-superior1 {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    .conteudo-superior2 {
+        grid-column: 1;
+        grid-row: 2 / span 2;
+        margin-bottom: 240px;
+    }
+
+    .conteudo-superior3 {
+        grid-row: 3;
+    }
 }

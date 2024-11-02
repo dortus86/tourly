@@ -68,6 +68,7 @@
     .contato {
         grid-template-columns: 1fr;
         justify-content: start;
+        padding: 0 40px;
     }
     .contato-conteudo h2 {
         font-size: 3vw;
