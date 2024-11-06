@@ -225,6 +225,7 @@
     .icones-menu-flutuante span {
         color: var(--cor-p1);
         font-weight: 500;
+        cursor: pointer;
     }
 
     #itens {
@@ -302,6 +303,10 @@
     .header-bg {
         height: 850px
     }
+    #burger {
+        font-size: 2rem;
+    }
+
     .explore h1 {
         font-size: 7vw;
         max-width: 500px;
@@ -321,7 +326,7 @@
         width: 10px;
     }
     .menu-superior-busca {
-        width: 20px;
+        width: 80px;
     }
     .menu-superior-logo a{
         padding: 0;
@@ -348,10 +353,16 @@
         justify-content: center;
         gap: 20px;
     }
+    .menu-inferior-nav ul {
+        width: 300px;
+    }
+    .icones-menu-flutuante {
+        gap: 0px;
+    }
 
-    .menu-superior {
-        padding-left: 10px;
-        padding-right: 10px;
+    .icones-menu-flutuante span {
+        color: var(--cor-p1);
+        font-weight: 500;
     }
 }
 
