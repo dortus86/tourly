@@ -372,5 +372,15 @@
         color: var(--cor-p1);
         font-weight: 500;
     }
+
+    .explore-botoes .botao_azul {
+        padding: 16px 30px;
+        font-size: 0.725rem;
+    }
+
+    .explore-botoes .botao_branco {
+        padding: 16px;
+        font-size: 0.725rem;
+    }
 }
 

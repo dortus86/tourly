@@ -287,3 +287,14 @@
     }
 
 }
+
+@media (max-width: 700px) {
+    .pacotes-cards > a {
+        margin-top: -20px;
+        font-size: 0.875rem;
+    }
+
+    .pacotes-preco-conteudo > a {
+        font-size: 0.725rem;
+    }
+}

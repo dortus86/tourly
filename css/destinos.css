@@ -182,5 +182,9 @@
         max-width: 100%;
     }
 
+    .destinos-container > a {
+        margin-top: 0px;
+        font-size: 0.875rem;
+    }
     
 }
