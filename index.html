@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto de estudo desenvolvido pelo Codewithsadee e recriado por mim apenas como objeto de estudo.">
     <title>Tourly - Agência de Viagens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
 </head>
@@ -26,6 +28,7 @@
             </div>
             <div class="menu-superior-busca">
                 <img src="./img/lupa.svg" alt="">
+                <span  class="material-symbols-outlined" id="burger" onclick="openMenu()">menu</span>
             </div>
         </div>
         <div class="menu-inferior container">
@@ -40,14 +43,20 @@
                     <img src="./img/youtube.svg" alt="youtube">
                 </a>
             </div>
-            <nav class="menu-inferior-nav">
+            <nav class="menu-inferior-nav" id="itens">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">SOBRE NÓS</a></li>
-                    <li><a href="#destinos">DESTINOS</a></li>
-                    <li><a href="#pacotes">PACOTES</a></li>
-                    <li><a href="#galeria">GALERIA</a></li>
-                    <li><a href="#contato">CONTATE-NOS</a></li>
+                    <li>
+                        <div class="icones-menu-flutuante">
+                            <img src="./img/logo-blue.svg" alt="logo">
+                            <span class="material-symbols-outlined" onclick="closeMenu()">close</span>
+                        </div>
+                    </li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">sobre nós</a></li>
+                    <li><a href="#destinos">destinos</a></li>
+                    <li><a href="#pacotes">pacotes</a></li>
+                    <li><a href="#galeria">galeria</a></li>
+                    <li><a href="#contato">contate-nos</a></li>
                 </ul>
             </nav>
             <a href="#" class="botao_azul">RESERVE AGORA</a>
@@ -86,7 +95,8 @@
         </div>
     </section>
 
-    <section class="destinos" id="destinos">
+    <div class="ancora" id="destinos"></div>
+    <section class="destinos">
         <div class="destinos-container container">
             <div class="destinos-titulo">
                 <h3 class="t18 cor-p1 font-m">descubra lugares</h3>
@@ -120,7 +130,8 @@
         </div>
     </section>
 
-    <section class="pacotes" id="pacotes">
+    <div class="ancora" id="pacotes"></div>
+    <section class="pacotes" >
         <div class="pacotes-container container">
             <div class="pacotes-titulo">
                 <h3 class="t18 cor-p1 font-m">pacotes populares</h3>
@@ -244,7 +255,8 @@
             </div>
     </section>
 
-    <section class="galeria" id="galeria">
+    <div class="ancora" id="galeria"></div>
+    <section class="galeria" >
         <div class="galeria-container container">
             <div class="galeria-titulo">
                 <h3 class="t18 cor-p1 font-m">galeria de fotos</h3>
@@ -315,5 +327,6 @@
             </ul>
         </div>
     </div>
+    <script src="./script/script.js"></script>
 </body>
 </html>

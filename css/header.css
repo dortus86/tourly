@@ -61,8 +61,22 @@
 }
 
 .menu-superior-busca {
-    max-width: 30px;
+    display: flex;
+    gap: 20px;
+    max-width: 100px;
     justify-self: end;
+    align-self: center;
+}
+
+#burger {
+    color: var(--cor-0);
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-superior-busca #burger:hover {
+    color: var(--cor-2);
 }
 
 .menu-inferior {
@@ -99,6 +113,12 @@
     width: 20px;
 }
 
+.menu-inferior-nav img,
+.icones-menu-flutuante span {
+    display: none;
+}
+
+
 .menu-inferior-nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +132,7 @@
 .menu-inferior-nav ul li a {
     color: var(--cor-0);
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 .menu-inferior-nav ul li a:hover {
@@ -176,6 +197,10 @@
 }
 
 @media (max-width: 1200px) {
+    #burger {
+        display: block;
+    }
+
     .explore {
         max-width: 800px;
     }
@@ -184,9 +209,70 @@
         padding-bottom: 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+    
+    .menu-inferior-nav img,
+    .menu-inferior-nav span {
+        display: block;
+        padding: 40px 20px;
+    }
 
-    .menu-inferior-nav {
+    .icones-menu-flutuante {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .icones-menu-flutuante span {
+        color: var(--cor-p1);
+        font-weight: 500;
+    }
+
+    #itens {
         display: none;
+    }
+
+    .menu-inferior-nav ul {
+        flex-direction: column;
+        position: fixed;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-right: 30px;
+        top: 0vh;
+        right: 0px;
+        width: 400px;
+        height: 100%;
+        background-color: var(--cor-0);
+        z-index: 999;
+    }
+    
+
+    .menu-inferior-nav ul li a{
+        color: var(--cor-p3);
+        margin-left: 30px;
+        padding: 16px 100vw 16px 0px ;
+        text-transform: capitalize;
+        white-space: nowrap;
+        position: relative;
+    }
+
+    .menu-inferior-nav ul li a::before {
+        content: '';
+        width: 500px;
+        height: 1px;
+        background-color: var(--cor-7);
+        top: -10px;
+        left: -30px;
+        position: absolute;
+    }
+
+    .menu-inferior-nav ul li:last-child a::after {
+        content: '';
+        width: 500px;
+        height: 1px;
+        background-color: var(--cor-7);
+        bottom: -10px;
+        left: -30px;
+        position: absolute;
     }
 
     .menu-inferior > a {
@@ -268,3 +354,4 @@
         padding-right: 10px;
     }
 }
+
