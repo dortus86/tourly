@@ -70,12 +70,17 @@
         justify-content: start;
         padding: 0 40px;
     }
-    .contato-conteudo h2 {
+
+    .contato-conteudo h3 {
         font-size: 3vw;
+    }
+    
+    .contato-conteudo h2 {
+        font-size: 4vw;
     }
 
     .contato-conteudo p {
-        font-size: 1rem;
+        font-size: .875rem;
         margin-bottom: 20px;
     }
 
@@ -98,7 +103,7 @@
     }
 
     .contato-conteudo p {
-        font-size: 0.725rem;
+        font-size: 0.875rem;
     }
 
     .contato-botao a {

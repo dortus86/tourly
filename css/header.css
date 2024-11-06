@@ -314,6 +314,10 @@
     .explore h1 {
         padding-top: 100px;
     }
+
+    .menu-superior {
+        padding: 20px 20px;
+    }
     .menu-superior-logo a{
         padding: 0;
         width: 100px;
@@ -327,6 +331,10 @@
     }
     .menu-superior-busca {
         width: 80px;
+    }
+
+    .menu-superior-busca img {
+        width: 20px;
     }
     .menu-superior-logo a{
         padding: 0;
